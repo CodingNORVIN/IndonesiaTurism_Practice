@@ -1,0 +1,38 @@
+// Font families
+$dm-sans: 'DM Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+// Font weights
+$weight-regular: 400;
+$weight-bold: 700;
+$weight-black: 900; // Roboto Black weight
+
+// ---------- DM Sans ----------
+
+// DM Sans font sizes
+$size-60: 60px;
+$size-42: 42px;
+$size-26-4: 26.4px;
+$size-18: 18px;
+
+// DM Sans line heights
+$line-height-150: 150%; // 60px size
+$line-height-50: 50px; // 42px size
+$line-height-41: 41px; // 26.4px size
+$line-height-28: 28px; // 18px size
+
+// DM Sans letter spacing
+$letter-spacing-0: 0;
+$letter-spacing-1: 1%; // percent
+$letter-spacing-0-5: 0.5px;
+
+// ---------- Roboto ----------
+
+// Roboto font sizes
+$size-120: 120px;
+
+// Roboto line heights
+$line-height-130: 130%; // for 120px size
+
+// Roboto letter spacing
+$letter-spacing-0p: 0%; // percent
