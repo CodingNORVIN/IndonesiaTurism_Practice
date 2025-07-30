@@ -1,5 +1,11 @@
-// Big Sized  Button
-
-// Middle Sized Button
-
-// Small Sized Button
+.button {
+	padding: 16px 41px;
+	letter-spacing: 0;
+	color: $white;
+	line-height: 150%;
+	font-size: 18px;
+	background-color: $main-red;
+	border-radius: 32px;
+	border: 0;
+	font-family: inherit;
+}
