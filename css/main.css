@@ -232,9 +232,9 @@ button {
   color: #dd2242;
 }
 .footer .footer-socials-wrapper {
-  position: absolute;
-  bottom: 0;
-  right: 152px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,9 +242,8 @@ button {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
-  padding-top: 60px;
-  padding-bottom: 52px;
-  height: auto;
+  margin-left: auto; /* Push socials to the right */
+  margin-right: 152px; /* Right offset restored */
 }
 .footer .footer-socials-wrapper .footer-socials-list {
   display: -webkit-box;
@@ -257,6 +256,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0;
 }
 .footer .footer-socials-wrapper .footer-socials-list .footer-socials-item .footer-socials-link {
   display: inline-block;
@@ -271,10 +271,12 @@ button {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 .footer .footer-socials-wrapper .footer-socials-list .footer-socials-item .footer-socials-link .footer-socials-icon:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: translateY(3px) scale(1.1);
+          transform: translateY(3px) scale(1.1);
 }
 .footer .footer-socials-wrapper p.footer-copyright {
   margin: 0;
@@ -288,6 +290,35 @@ button {
       -ms-user-select: none;
           user-select: none;
   line-height: 1;
+}
+
+.footer {
+  position: relative;
+}
+.footer .red-circle {
+  width: 104px;
+  height: 104px;
+  background-color: #dd2242;
+  border-radius: 50%;
+  position: absolute;
+  top: -68px;
+  right: 83px;
+  z-index: 10;
+  cursor: pointer;
+}
+.footer .red-circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 32.5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 39px;
+  height: 22px;
+  background-image: url("/images/hot-folder/footer-arrow-up.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .header {

@@ -66,15 +66,15 @@
 	}
 
 	.footer-socials-wrapper {
-		position: absolute;
-		bottom: 0;
-		right: 152px;
+		padding-top: 0;
+		padding-bottom: 0;
+		height: auto;
+
 		display: flex;
 		align-items: center;
 		gap: 40px;
-		padding-top: 60px;
-		padding-bottom: 52px;
-		height: auto;
+		margin-left: auto; /* Push socials to the right */
+		margin-right: 152px; /* Right offset restored */
 
 		.footer-socials-list {
 			display: flex;
@@ -83,6 +83,7 @@
 			padding: 0;
 			gap: 22px;
 			align-items: center;
+			margin-top: 0;
 
 			.footer-socials-item {
 				.footer-socials-link {
@@ -94,9 +95,10 @@
 						display: block;
 						object-fit: contain;
 						transition: transform 0.3s ease;
+						transform: translateY(3px);
 
 						&:hover {
-							transform: scale(1.1);
+							transform: translateY(3px) scale(1.1);
 						}
 					}
 				}
@@ -112,6 +114,35 @@
 			color: $white;
 			user-select: none;
 			line-height: 1;
+		}
+	}
+}
+.footer {
+	position: relative;
+
+	.red-circle {
+		width: 104px;
+		height: 104px;
+		background-color: $main-red;
+		border-radius: 50%;
+		position: absolute;
+		top: -68px;
+		right: 83px;
+		z-index: 10;
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: calc((104px - 39px) / 2);
+			transform: translateY(-50%);
+			width: 39px;
+			height: 22px;
+			background-image: url('/images/hot-folder/footer-arrow-up.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
 		}
 	}
 }

@@ -1,3 +1,5 @@
+// social media icons red on hover
+
 document.addEventListener('DOMContentLoaded', () => {
 	const icons = document.querySelectorAll('.footer-socials-icon');
 
@@ -13,4 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			img.setAttribute('src', originalSrc);
 		});
 	});
+});
+
+// red circle animation on scroll up
+
+const redCircle = document.querySelector('.red-circle');
+
+redCircle.addEventListener('click', () => {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
 });
