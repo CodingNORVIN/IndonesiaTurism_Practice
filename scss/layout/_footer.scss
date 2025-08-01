@@ -1,3 +1,117 @@
-footer {
+.footer {
 	background-color: $black-contrast;
+	height: 136px;
+	padding: 0;
+	font-family: $dm-sans, sans-serif;
+	color: $white;
+	font-size: $size-18;
+	letter-spacing: $letter-spacing-0-5;
+	line-height: $line-height-28;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	.container {
+		margin: 0 auto;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.footer-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 124px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.footer-brand {
+		flex-shrink: 0;
+
+		.footer-logo {
+			width: 174px;
+			height: auto;
+			max-height: 100%;
+			object-fit: contain;
+			display: block;
+			padding-left: 70px;
+		}
+	}
+
+	.footer-menu {
+		display: flex;
+		gap: 35px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		.footer-menu-item {
+			.footer-menu-link {
+				color: $white;
+				font-weight: $weight-bold;
+				font-size: $size-18;
+				letter-spacing: 0.5px;
+				text-decoration: none;
+				line-height: 1;
+
+				&:hover {
+					color: $main-red;
+				}
+			}
+		}
+	}
+
+	.footer-socials-wrapper {
+		position: absolute;
+		bottom: 0;
+		right: 152px;
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		padding-top: 60px;
+		padding-bottom: 52px;
+		height: auto;
+
+		.footer-socials-list {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			gap: 22px;
+			align-items: center;
+
+			.footer-socials-item {
+				.footer-socials-link {
+					display: inline-block;
+
+					.footer-socials-icon {
+						width: 24px;
+						height: 24px;
+						display: block;
+						object-fit: contain;
+						transition: transform 0.3s ease;
+
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+				}
+			}
+		}
+
+		p.footer-copyright {
+			margin: 0;
+			font-weight: $weight-bold;
+			font-size: $size-18;
+			letter-spacing: 0.5px;
+			white-space: nowrap;
+			color: $white;
+			user-select: none;
+			line-height: 1;
+		}
+	}
 }
