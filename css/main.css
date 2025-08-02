@@ -1,9 +1,3 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 /* _reset.scss */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -142,16 +136,55 @@ button {
   cursor: pointer;
 }
 
-.button {
-  padding: 16px 41px;
-  letter-spacing: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url(../images/backgrounds/hero-bg.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.31)), to(rgba(0, 0, 0, 0.29)));
+  background-image: url(../images/backgrounds/hero-bg.jpg), linear-gradient(to bottom, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.29));
+  background-attachment: fixed;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 842px;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 78px;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 62px;
+}
+
+.header-nav-link {
   color: #ffffff;
-  line-height: 150%;
   font-size: 18px;
-  background-color: #dd2242;
-  border-radius: 32px;
-  border: 0;
-  font-family: inherit;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
 }
 
 .footer {
@@ -321,51 +354,6 @@ button {
   background-position: center;
 }
 
-.header {
-  background-image: url(../images/backgrounds/hero-bg.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.31)), to(rgba(0, 0, 0, 0.29)));
-  background-image: url(../images/backgrounds/hero-bg.jpg), linear-gradient(to bottom, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.29));
-  background-attachment: fixed;
-}
-
-.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 842px;
-}
-
-.header-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 78px;
-}
-
-.header-nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 62px;
-}
-
-.header-nav-link {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0;
-  font-weight: 700;
-}
-
-.header-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-}
-
 .hero {
   background-image: url(../images/backgrounds/hero-bg.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.31)), to(rgba(0, 0, 0, 0.29)));
   background-image: url(../images/backgrounds/hero-bg.jpg), linear-gradient(to bottom, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.29));
@@ -392,4 +380,44 @@ button {
   padding: 26px 64px;
   background-color: #dd2242;
   border-radius: 211px;
+}
+
+.gallery {
+  background-color: #010a20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "DM Sans", sans-serif, sans-serif;
+  min-height: 100vh;
+}
+
+.gallery-title {
+  color: #010a20;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0;
+  margin: 172px 0 42px 0;
+}
+
+.button {
+  padding: 16px 41px;
+  letter-spacing: 0;
+  color: #ffffff;
+  line-height: 150%;
+  font-size: 18px;
+  background-color: #dd2242;
+  border-radius: 32px;
+  border: 0;
+  font-family: inherit;
 }/*# sourceMappingURL=main.css.map */

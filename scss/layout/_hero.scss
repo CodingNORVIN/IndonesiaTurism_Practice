@@ -1,3 +1,7 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/typography' as *;
+
 .hero {
 	background-image: url(../images/backgrounds/hero-bg.jpg),
 		linear-gradient(to bottom, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.29));

@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/typography' as *;
+
+.gallery {
+	background-color: $black-contrast;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; // centers vertically
+	font-family: $dm-sans, sans-serif;
+	min-height: 100vh; // makes section take full height of viewport
+}
+
+.gallery-title {
+	color: $black-contrast;
+	font-size: $size-60;
+	font-weight: $weight-bold;
+	line-height: $line-height-150;
+	letter-spacing: $letter-spacing-0;
+	margin: 172px 0 42px 0; // keeps title spacing inside the flex layout
+}

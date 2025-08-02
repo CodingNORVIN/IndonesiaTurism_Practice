@@ -1,13 +1,17 @@
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+// abstracts
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/typography' as *;
 
-@import 'base/base';
-@import 'base/reset';
-@import 'base/typography';
+// base
+@use 'base/reset';
+@use 'base/base';
 
-@import 'components/buttons';
+// layout
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/hero';
+@use 'layout/central';
 
-@import 'layout/central';
-@import 'layout/footer';
-@import 'layout/header';
-@import 'layout/hero';
+// components
+@use 'components/buttons';
